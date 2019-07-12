@@ -64,18 +64,20 @@
 // Using class
 
 
-class Point {
-    x: number;
-    y: number;
+// class Point {
+//     x: number;
+//     y: number;
 
-    drawPoint(): void {
-        console.log("drawPoint");
-    };
-    getDistance(another: Point): Point {
-        console.log("getDistance");
-        return new Point();
-    }
-}
+    // constructor() {}
+
+//     drawPoint(): void {
+//         console.log("drawPoint");
+//     };
+//     getDistance(another: Point): Point {
+//         console.log("getDistance");
+//         return new Point();
+//     }
+// }
 
 // class PointClass implements Point {
 //     x: number;
