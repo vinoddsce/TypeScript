@@ -1,6 +1,5 @@
 // let vari_name: data_type = initial_value;
 
-
 // let someVar: number = 10;
 
 // let someVar: any;

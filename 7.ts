@@ -43,6 +43,7 @@
 //     x: 100,
 //     y: 2
 // }
+
 // drawPointObject(point);
 
 
@@ -60,12 +61,17 @@
 // There are two solutions for this.
 
 // 1. Inline annotation as follows. 
+
 // Just like we annotate the type as let n: number, we can 
 // use custom type for the custom object. 
 
 
-// let n: number
-// n = "A"
+// let n: number = 100;
+// // n = "A";
+
+// let point: { x: number, y: number } = { x: 100, y: 200 };
+// point = { x: 1, y: 2 };
+// point = { x: 112, y: 24 };
 
 // let drawPointObjectInlineAnnotation = (point: { x: number, y: number }) => {
 //     console.log('X: ' + point.x);
@@ -76,7 +82,6 @@
 //     x: 1,
 //     y: 2
 // });
-
 
 // drawPointObjectInlineAnnotation({
 //     name: "Vinod"

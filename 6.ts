@@ -6,7 +6,7 @@
 let message: string = 'abc';
 let endsWithC: boolean = message.endsWith('c');
 console.log(endsWithC);
-
+console.log(typeof message);
 
 
 // By default if you wont set the value the type will be any
@@ -17,7 +17,7 @@ let msg2;
 msg2 = 'abc';
 // msg2.
 
-console.log(typeof msg2);
+// console.log(typeof msg2);
 
 console.log((<string>msg2).endsWith('c'));
 // // // OR
