@@ -13,7 +13,7 @@
 //     x: number,
 //     y: number
 // }
-// // With this interface i am defining an shape of an object. 
+// // With this interface i am defining an shape of an object.
 
 // let drawPointObjectInterface = (point: Point) => {
 //     console.log('X: ' + point.x);
@@ -26,6 +26,7 @@
 // });
 
 // // What if we write another function as below ??
+
 // let getDistance = (pointA: Point, pointB: Point) => {
 //     // ..
 // }
@@ -43,12 +44,34 @@
 // In interface we cann't have implementations, we can have only declarations. 
 // Rewriting the Point interface
 
-// interface Point {
-//     x: number,
-//     y: number,
-//     drawPoint: () => void,
-//     getDistance: (another: Point) => Point
-// }
+interface Point {
+    x: number,
+    y: number,
+    drawPoint: () => void,
+    getDistance: (another: Point) => Point
+}
+
+
+class PointImpl {
+    x: number;
+    y: number;
+
+    drawPoint() {
+        console.log("X: ", this.x, ", Y: ", this.y);
+    }
+
+    getDistance(point: PointImpl) {
+        // ...
+    }
+}
+
+let p1 = new PointImpl();
+p1.x = 100;
+p1.y = 200;
+p1.drawPoint();
+
+
+
 
 // class PointClass implements Point {
 //     x: number;

@@ -1,8 +1,14 @@
+
+
+// SYNTAX
 // let vari_name: data_type = initial_value;
+// let vari_name = initial_value;
+// let vari_name;
 
 // let someVar: number = 10;
+// console.log(someVar);
 
-// let someVar: any;
+// let someVar: number;
 // someVar = 100;
 // console.log(someVar);
 // someVar = 'a';
@@ -40,9 +46,6 @@
 
 // let c: boolean = true;
 
-
-
-
 // let someThing: number;
 // someThing = 100;
 // someThing = "jdsfjdshfjh";
@@ -54,7 +57,7 @@
 // e = 100;
 // e = "jdskdjfkdjf";
 
-// let f: number[] = [1, 2, 3, 4, 5];
+// let f: number[] = [1, 2, 3, 4, 5, ''];
 // let g: any[] = [1, 'a', true];
 
 

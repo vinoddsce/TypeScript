@@ -47,15 +47,44 @@
 // drawPointObject(point);
 
 
-// But what happens when i pass other than point object. I wont get any compiler 
-// error, but i get run time error. Because the algorithm in the drawPointObject
-// expecting the values of x and y.
+// // But what happens when i pass other than point object. I wont get any compiler 
+// // error, but i get run time error. Because the algorithm in the drawPointObject
+// // expecting the values of x and y.
 
 // var diffObj = {
 //     name: "Vinod"
 // };
 
 // drawPointObject(diffObj);
+
+
+// let value: number = 100;
+// value = "100";
+
+
+// let display = (value: number) => {
+//     console.log("Value Is ", value);
+// }
+
+// display(100);
+// display("Hundred");
+
+
+// let draw = (point: { x: number, y: number }) => {
+
+// }
+
+// let point = {
+//     x: 100,
+//     y: 200
+// }
+// draw(point);
+
+// let diffObj = {
+//     name: "Vinod"
+// }
+
+// draw(diffObj);
 
 // So, what's the solution for this ?????
 // There are two solutions for this.
