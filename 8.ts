@@ -48,40 +48,65 @@ interface Point {
     x: number,
     y: number,
     drawPoint: () => void,
-    getDistance: (another: Point) => Point
+    getDistance: (another: Point) => number
 }
 
 
-class PointImpl {
+// class PointImpl {
+//     x: number;
+//     y: number;
+//     drawPoint(): void {
+//         console.log("X: ", this.x, ", Y: ", this.y);
+//     }
+//     getDistance(point: PointImpl): number {
+//         return 100;
+//     }
+// }
+
+// // let n: number = 100;
+
+// let p1: PointImpl = new PointImpl();
+// p1.x = 100;
+// p1.y = 200;
+// p1.drawPoint();
+
+
+// let p2: PointImpl = new PointImpl();
+// p2.x = 28;
+// p2.y = 50;
+// p2.drawPoint();
+
+
+
+
+
+class PointClass implements Point {
     x: number;
     y: number;
 
-    drawPoint() {
-        console.log("X: ", this.x, ", Y: ", this.y);
+    // constructor() {
+    //     this.x = 1;
+    //     this.y = 2;
+    // }
+
+    // constructor() { }
+
+    constructor(xValue: number, yValue: number) {
+        this.x = xValue;
+        this.y = yValue;
     }
 
-    getDistance(point: PointImpl) {
-        // ...
+    drawPoint(): void {
+        console.log("X: ", this.x, ", Y: ", this.y);
+    }
+    getDistance(point: Point): number {
+        return 100;
     }
 }
 
-let p1 = new PointImpl();
-p1.x = 100;
-p1.y = 200;
-p1.drawPoint();
 
-
-
-
-// class PointClass implements Point {
-//     x: number;
-//     y: number;
-//     drawPoint() {
-//     }
-//     getDistance(Point) {
-//         return Point
-//     }
-// }
+let point1: Point = new PointClass(25, 44);
+point1.drawPoint();
 
 
 // Using class
